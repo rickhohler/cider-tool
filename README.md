@@ -11,6 +11,8 @@ pip3 install -r requirements.txt
 
 ### Analyze Bundle Archive
 
+Analyze iOS app bundle. Displays relevant information.
+
 ```sh
 $ python3 cider.py analyze --bundle <name of xcarchive>
 
@@ -25,6 +27,8 @@ Team:               ZZYYXXWWUU
 ```
 
 ### Doctor
+
+Show information about the installed tooling and certifications.
 
 ```sh
 $ python3 cider.py doctor
@@ -45,8 +49,10 @@ Doctor summary (to see all details, run doctor --verbose):
 
 ### Amend Bundle Archive
 
+Change bundle archive properties.
+
 ```sh
-$ python3 cider.py doctor
+$ python3 cider.py amend --bundle <name of xcarchive>
 
 ```
 
