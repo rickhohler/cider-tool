@@ -1,4 +1,4 @@
-# Cider Tool
+# :apple: Cider Tool
 Handy commands for iOS developers.
 
 ## Installation
