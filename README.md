@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 
 ## Commmands
 
-### Analyze
+### Analyze Bundle Archive
 
 ```sh
 $ python3 cider.py analyze --bundle <name of xcarchive>
@@ -43,7 +43,7 @@ Doctor summary (to see all details, run doctor --verbose):
     ✗ iPhone Distribution: Acme Corporation (ZZYYXXWWUU)
 ```
 
-### Amend
+### Amend Bundle Archive
 
 ```sh
 $ python3 cider.py doctor
@@ -63,3 +63,5 @@ Apple Developer Team Id [VVWWXXYYZZ]: ZZYYXXWWVV
 ## License
 
 - [MIT License][license-mit]
+
+[license-mit]:    https://github.com/rickhohler/cider-tool/blob/master/LICENSE-MIT
