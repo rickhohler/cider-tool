@@ -70,4 +70,4 @@ Apple Developer Team Id [VVWWXXYYZZ]: ZZYYXXWWVV
 
 - [MIT License][license-mit]
 
-[license-mit]:    https://github.com/rickhohler/cider-tool/blob/master/LICENSE-MIT
+[license-mit]:    https://github.com/rickhohler/cider-tool/blob/master/LICENSE
