@@ -16,7 +16,7 @@ $ python3 cider.py analyze --bundle <name of xcarchive>
 
 ```
 
-````sh
+```sh
 $ python3 cider.py analyze --bundle "example.xcarchive"
 ApplicationPath:    Applications/DemoApp.app
 CFBundleIdentifier: com.acme.DemoApp
@@ -31,7 +31,7 @@ $ python3 cider.py doctor
 
 ```
 
-````sh
+```sh
 $ python3 cider.py doctor
 Doctor summary (to see all details, run doctor --verbose):
 [✓] Codesign tool installed
@@ -50,7 +50,7 @@ $ python3 cider.py doctor
 
 ```
 
-````sh
+```sh
 $ python3 cider.py amend --bundle "example.xcarchive"
 App Bundle Identifier [com.acme.DemoApp]: com.acme.NewDemoApp
 Signing Identity [iPhone Developer: John Doe (ZZYYXXWWUU)]: iPhone Developer: Jane Doe (ZZYYXXWWUU)
