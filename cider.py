@@ -34,10 +34,15 @@ PASS_DOT = '\033[1;32;40m✗\033[0;37;40m'
 IDENT = '    '
 
 def replace_in_file(filename, orgstr, newstr):
-    with open(filename) as f:
-        newText=f.read().replace(orgstr, newstr)
-    with open(filename, "w") as f:
+    with open(filename, "rt", encoding="ISO-8859-1") as f:
+        newText=f.read().replace(wrap_with_string(orgstr), wrap_with_string(newstr))
+        f.close()
+    with open(filename, "wt", encoding="ISO-8859-1") as f:
         f.write(newText)
+        f.close()
+
+def wrap_with_string(instr):
+    return "<string>" + instr + "</string"
 
 def dump_infoplist(bundle):
     info_filename = bundle + '/Info.plist'
@@ -81,7 +86,7 @@ def amend_xcarchive(bundle):
         old_bid = props["CFBundleIdentifier"]
         replace_in_file(info_filename, old_bid, bundle_id)
         # Update bundle id in app bundle.
-        app_path_info = bundle + '/' + props["ApplicationPath"] + '/Info.plist'
+        app_path_info = bundle + '/Products/' + props["ApplicationPath"] + '/Info.plist'
         replace_in_file(app_path_info, old_bid, bundle_id)
         print('+ Changed bundle identifier from \'' + props["CFBundleIdentifier"] + '\' to \'' + bundle_id + '\'')
     if signing_identity:
