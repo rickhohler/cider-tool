@@ -7,6 +7,8 @@ Handy commands for iOS developers.
 pip3 install -r requirements.txt
 ```
 
+Program was created and tested on version 3.7.
+
 ## Commmands
 
 ### Analyze Bundle Archive
